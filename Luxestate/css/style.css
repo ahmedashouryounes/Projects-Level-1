@@ -1,0 +1,495 @@
+/*---------reset-----------*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*---------global-----------*/
+.container{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.d-flex{display: flex;}
+
+
+/*-------------nav----------------*/
+nav{z-index: 1;
+    background-color: #c2c2c2;
+    position: sticky;
+    top: 1;
+    top: 0;
+}
+.nav{
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+.nav h2{
+    width: 20%;
+
+}
+.nav ul{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.nav-right{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav a{
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.nav-right button{
+    text-transform: capitalize;
+    background-color: #f5c401;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+/*------------اheader-------------*/
+.header{
+    background-image: url(../images/retro-modern-apartment-design-1.jpg);
+    background-color: #f5c401;
+    background-size: 76% 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-position: right;
+    
+}
+.header h1{
+    width: 60%;
+    font-size: 75px;
+    text-transform: capitalize;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    padding-left: 5%;
+}
+.search{
+    position: relative;
+    height: 70px;
+    padding-left: 5%;
+}
+.sea-bar{
+    height: 65px;
+    width: 35%;
+    border: none;
+    font-weight: bold;
+    line-height: 66px;
+    font-size: 18px;
+    margin-right: -7px;
+    padding-left: 50px;
+}
+::placeholder{
+    color: rgb(218, 216, 216);
+}
+.search i{
+    color: rgb(218, 216, 216);
+    font-size: 18px;
+    padding-left: 20px;
+    padding-top: 20px;
+    position: absolute;
+}
+
+.btn-sea{
+    height: 65px;
+    width: 10%;
+    border: none;
+    text-align: center;
+    font-size: 17px;
+    background-color: #f5c401;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 62.9px;
+}
+.btn-down{
+    color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    background-color: #f5c401;
+    font-size: 15px;
+    font-weight: bold;
+    width: 200px;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+}
+.btn-down i{
+    color: white;
+    padding-right: 20px;
+    font-size: 20px;
+}
+.btn-ast{
+    bottom: 0px;
+    right: 0px;
+}
+.btn-num{
+    bottom: 0px;
+    right: 200px;
+}
+/*--------section company---------*/    
+.com{height: 600px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 5%;
+}
+.com-left{
+    width: 47%;
+}
+.com-left h2{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+.com-left p{
+    line-height: 1.7;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.com-right{
+    
+    height: 460px;
+    width: 43%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    
+}
+.com-right div{
+    background-color: #f5f5f5;
+    height: 220px;
+    width: 48%;
+    text-align: center;
+    padding-top: 55px;
+    box-sizing: border-box;
+}
+.com-num{font-weight: bolder;
+    font-size: 50px;
+    padding-bottom: 5px;
+    color: #fdda1b;
+}
+.com-word{font-weight: bold;
+font-size: 20px;
+}
+/*------------Appartments-----------*/ 
+.appart{
+    padding: 50px 5%;
+}
+.appart h2{
+    font-size: 45px;
+    text-transform: capitalize;
+}
+.boxs{
+    margin: 30px 0;
+    height: 1070px;
+    justify-content: space-between;
+    align-content: space-evenly;
+    flex-wrap: wrap;
+}
+.box{
+    width: 32%;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+.box:hover{
+    width: 32%;
+    box-shadow: 0 6px 16px 0 rgba(0,0,0,0.4);
+}
+.box-down{
+    padding: 10px 6% 0 6%;
+}
+.box-down h5{
+    font-size: 17px;
+    text-transform: capitalize;
+}
+
+.det{
+    padding: 20px 0;
+    justify-content: space-between;
+}
+.det .price{
+    color: #f5c401;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.det-right{
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.2);
+}
+.det-right i{
+    margin-left: 10px;
+}
+.det-right span{
+    margin-left: 5px;
+}
+.appart-down .search{
+    padding: 0;
+}
+.w-btn{
+    background-color: white;
+    width: 200px;
+    height: 60px;
+    border: none;
+    margin-left: 30px;
+    cursor: pointer;
+}
+/*--------------works--------------*/
+.work-servic{
+    padding: 40px 0;
+}
+.h-w-s{
+    text-transform: capitalize;
+    padding: 10px 5% 5px;
+}
+.p-w-s{
+    padding: 10px 5%;
+    font-size: 15px;
+    line-height: 1.6;
+}
+.works-down{
+    justify-content: space-between;
+    padding: 40px 5%;
+}
+
+.services-down{
+    padding: 40px 0;
+    justify-content: space-between;
+
+}
+.boxs-3{
+    padding: 120px 0 30px;
+    width: 32%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 30%);
+    box-sizing: border-box;
+}
+.boxs-3:hover{
+    background-color: #f5c401;
+    color: white;
+
+}
+.boxs-3 h2{
+    position: absolute;
+    font-weight: bolder;
+    font-size: 200px;
+    bottom: 220px;
+    right: 210px;
+}
+
+.boxs-3 h4{
+    padding: 20px 30px;
+    text-transform: capitalize;
+}
+.boxs-3 p{
+    line-height: 1.6;
+    font-size: 17px;
+    padding:0 60px; 
+}
+.boxs-3 h6{
+    margin: 10px 60px;
+    padding-bottom: 7px;
+    border-bottom: 3px solid;
+    width: fit-content;
+    text-transform: capitalize;
+}
+.services-down img{
+    width: 55%;
+    height: 600px;
+}
+.ser-det{
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 40%;
+}
+.ser-det-box{
+    width: 100%;
+    height: 170px;
+}
+/*--------------agents--------------*/
+.agents{
+    padding: 50px 5%;
+}
+.agents .boxs{
+    height: auto;
+}
+.agents h2{
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.agents p{
+    width: 40%;
+    line-height: 1.7;
+    font-size: 16px;
+    margin-bottom: 50px;
+}
+/*--------------works--------------*/
+.super{
+    padding: 80px 5%;
+    height: 1250px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.super div{
+    width: 49%;
+    height: 400px;}
+.super img{
+    width: 100%;
+    height: 350px;
+}
+.rel{
+    position: relative;
+}
+.btn-cen{
+    font-weight: bolder;
+    bottom: 16px;
+    right: 150px;
+    width: 300px;
+    font-size: 17px;
+}
+.btn-rig{
+    font-weight: bolder;
+    bottom: 16px;
+    right: -50px;
+    width: 300px;
+    font-size: 17px;
+}
+.awe-right{
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-left: 70px;
+}
+.awe-left{
+    text-align: right;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-right: 70px;
+}
+.super h3{
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+.super p{
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    line-height: 2;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+.show-btn{
+    display: block;
+    background-color: #1F373D;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    width: 40%;
+    height: 80px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+/*--------------footer--------------*/
+footer{
+    background-color: #1F373D;
+}
+.explore{
+    padding: 40px 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+.explore h2{
+    color: white;
+    width: 30%;
+    text-transform:capitalize ;
+}
+.ex-right{
+    width: 40%;
+    position: relative;
+}
+.explore input{
+    padding-left: 25px;
+    height: 60px;
+    width: 90%;
+    box-sizing: border-box;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.explore i{
+    position: absolute;
+    transform: scale(2,.8);
+    right: 75px;
+    bottom: 20px;
+    color: #1F373D;
+}
+.foo-mid{
+    padding: 10px 5%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.foo-mid h5{
+    color: white;
+    width: 15%;
+    text-transform:capitalize ;
+}
+.foo-mid ul{
+    font-size: 17px;
+    text-transform: uppercase;
+    list-style: none;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.foo-mid a{
+    text-decoration: none;
+    color: #c2c2c2;
+}
+.foo-down{
+    padding: 10px 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+.foo-down p{
+    font-size: 15px;
+    color: #d3d6d8;
+    width: 15%;
+    line-height: 2;
+}
+.ul-all{
+
+    line-height: 2.5;
+    font-size: 17px;
+    text-transform: capitalize;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ul-all ul{
+    list-style: none;
+    width: 15%;
+}
+.ul-all a{
+    text-decoration: none;
+    color: #d3d6d8;
+}
+.foo-mid li{
+    width: 15%;
+}

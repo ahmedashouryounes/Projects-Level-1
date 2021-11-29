@@ -1,0 +1,57 @@
+
+@media screen and (min-width:0px) and (max-width:792px){
+  .container{
+    width:100%;
+  }
+  .header{
+    background-size: cover;
+  }
+  .nav-d-flex ul{
+    flex-wrap: wrap;
+    width:70%;
+  }
+  .section-1,
+		 .section-2,
+  .section-3{
+    flex-wrap: wrap;
+  }
+  .what-dont-d-flex ul{
+    flex-wrap: wrap;
+  }
+  .how-did{
+    flex-wrap: wrap;
+  }
+  .det,
+  .foo-div{
+    width:100%;
+  }
+  .right-side,
+  .left-side,
+  .right-pop{
+    width:100%;
+    margin-top: 10px;
+  }
+  .right-side *{
+    padding-left: 0;
+  }
+  .img-dont,
+  .footer-flex{
+    flex-wrap: wrap;
+    
+  }
+  .img-dont-left,
+  .img-dont-right{
+    width:100%;
+  }
+  .box-img2,
+  .travel-box1,
+  .travel-box2,
+  .travel-box3{
+    width:100%;
+  }
+}
+@media screen and (min-width:577px) and (max-width:792px){
+  .container{
+    width:80%;
+  }
+}
